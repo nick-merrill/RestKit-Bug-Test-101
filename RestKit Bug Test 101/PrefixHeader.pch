@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  RestKit Bug Test 101
+//
+//  Created by Nicholas Merrill on 9/8/14.
+//  Copyright (c) 2014 Nick Merrill. All rights reserved.
+//
+
+#ifndef RestKit_Bug_Test_101_PrefixHeader_pch
+#define RestKit_Bug_Test_101_PrefixHeader_pch
+
+#import <CoreData/CoreData.h>
+#import <RestKit/RestKit.h>
+
+#endif
