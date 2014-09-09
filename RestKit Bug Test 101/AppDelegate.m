@@ -39,6 +39,9 @@
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"https://api.github.com"]];
     objectManager.managedObjectStore = managedObjectStore;
     
+    /// ******* Register my custom operation class ********* ///
+    [objectManager registerRequestOperationClass:[MyRKObjectRequestOperation class]];
+    
     [RKObjectManager setSharedManager:objectManager];
     
     RKEntityMapping *entityMapping = [RKEntityMapping mappingForEntityForName:@"Gist" inManagedObjectStore:managedObjectStore];
